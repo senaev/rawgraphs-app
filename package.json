@@ -41,6 +41,7 @@
     "worker-loader": "^3.0.2"
   },
   "scripts": {
+    "postinstall": "patch-package",
     "format": "prettier --write src",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
@@ -63,6 +64,8 @@
     ]
   },
   "devDependencies": {
+    "patch-package": "^8.0.1",
+    "postinstall-postinstall": "^2.1.0",
     "prettier": "^2.1.2",
     "sass": "^1.63.6"
   }
