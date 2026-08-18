@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 import * as d3 from 'd3'
-import * as rawgraphsCore from '@rawgraphs/rawgraphs-core'
+import * as rawgraphsCore from '../rawgraphs-core'
 import LRU from 'lru-cache'
 
 export const NPM_CDN = 'https://cdn.jsdelivr.net/npm/'

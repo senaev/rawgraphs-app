@@ -30,9 +30,9 @@ import {
   violinplot,
   voronoidiagram,
   voronoitreemap,
-} from '@rawgraphs/rawgraphs-charts'
+} from './rawgraphs-charts'
 
-import { calendarHeatmap } from '@rawgraphs/rawgraphs-calendar-heatmap'
+import { calendarHeatmap } from './rawgraphs-calendar-heatmap'
 
 // New charts, not included into first release.
 // Comment at necessity.
