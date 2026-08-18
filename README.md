@@ -36,7 +36,7 @@ If you want to run your instance of RAWGraphs locally on your machine, be sure y
 In the terminal, navigate to the folder where you want to install the app and clone the `RAWGraphs-app` GitHub repository:
 
 ```shell
-git clone https://github.com/rawgraphs/rawgraphs-app.git
+git clone https://github.com/senaev/rawgraphs-app.git
 ```
 
 Browse the folder containing the repository:
@@ -110,7 +110,7 @@ Bibtex:
 
 ## License
 
-RAWGraphs is provided under the [Apache License 2.0](https://github.com/rawgraphs/rawgraphs-app/blob/master/LICENSE):
+RAWGraphs is provided under the [Apache License 2.0](https://github.com/senaev/rawgraphs-app/blob/master/LICENSE):
 
     Copyright (c), 2013-2021 DensityDesign Lab, Calibro, INMAGIK <hello@rawgraphs.io>
     

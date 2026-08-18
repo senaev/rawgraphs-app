@@ -40,7 +40,7 @@ export default function Footer(props) {
               </a>
               .
               <br />© 2013-2021{' '}
-              <a href="https://raw.github.com/rawgraphs/rawgraphs-app/master/LICENSE">
+              <a href="https://raw.githubusercontent.com/senaev/rawgraphs-app/master/LICENSE">
                 (Apache License 2.0)
               </a>
             </p>

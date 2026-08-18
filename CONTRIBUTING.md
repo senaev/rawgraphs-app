@@ -1,6 +1,6 @@
 ## Contributing
 
-Want to contribute to RAWGraphs's development? You are more than welcome! Start by cloning the repository (the "Code" button at the top-right corner of this page) and follow the instructions in [README file](https://github.com/rawgraphs/rawgraphs-app#installation) to install dependencies and set it up.
+Want to contribute to RAWGraphs's development? You are more than welcome! Start by cloning the repository (the "Code" button at the top-right corner of this page) and follow the instructions in [README file](https://github.com/senaev/rawgraphs-app#installation) to install dependencies and set it up.
 Then you can use Github's issues and pull requests to discuss and share your work.
 
 You will need to sign a [Contributor License Agreement (CLA)](https://www.clahub.com/agreements/densitydesign/raw) before making a submission. It will be automatically prompted in the moment you will make a "pull request" to the repository. We adopted CLA to be sure that the project will remain open source.
