@@ -1,6 +1,6 @@
 {
   "name": "rawgraphs-frontend",
-  "homepage": "https://app.rawgraphs.io",
+  "homepage": "https://senaev.github.io/rawgraphs-app",
   "version": "2.0.1",
   "private": true,
   "dependencies": {
