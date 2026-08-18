@@ -1,5 +1,6 @@
 import { mapData } from '../mapping'
 import { dimensions } from '../dimensions'
+import { getDefaultDimensionAggregation } from '../../../rawgraphs-core'
 
 const dataTypes = {
   USAGE_TIMESTAMP: 'string',
@@ -57,7 +58,18 @@ describe('barchartstackedlong mapping', () => {
     const size = dimensions.find((d) => d.id === 'size')
     expect(size.multiple).toBeUndefined()
     expect(size.validTypes).toEqual(['number'])
-    expect(size.aggregationDefault).toEqual({ number: 'sum' })
+    expect(size.aggregationDefault).toBe('sum')
+  })
+
+  it('defaults to sum whatever column type is dropped on Size', () => {
+    // The card accepts any column and only flags the invalid ones, and the
+    // object form of aggregationDefault falls back to count for a type it does
+    // not list. Every type has to resolve to sum, or an invalid drop leaves a
+    // count behind that survives into the mapping.
+    const size = dimensions.find((d) => d.id === 'size')
+    expect(getDefaultDimensionAggregation(size, 'number')).toBe('sum')
+    expect(getDefaultDimensionAggregation(size, 'string')).toBe('sum')
+    expect(getDefaultDimensionAggregation(size, 'date')).toBe('sum')
   })
 
   it('splits one bar into a segment per category value', () => {

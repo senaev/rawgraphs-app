@@ -20,9 +20,15 @@ export const dimensions = [
     required: true,
     operation: 'get',
     aggregation: true,
-    aggregationDefault: {
-      number: 'sum',
-    },
+    // Plain string rather than { number: 'sum' }, as the stock bar chart also
+    // declares it. The card accepts a column of any type, flagging the invalid
+    // ones instead of refusing the drop, and getDefaultDimensionAggregation
+    // falls back to the first registered aggregator, count, for any type absent
+    // from the object form. Dropping a string or a date here would therefore
+    // store count, and since the drop handler appends to the aggregation array
+    // while annotateMapping reads its first element, that count would outlive
+    // the invalid column. A string applies to every type.
+    aggregationDefault: 'sum',
   },
 
   {
