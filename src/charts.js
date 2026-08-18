@@ -34,6 +34,8 @@ import {
 
 import { calendarHeatmap } from './rawgraphs-calendar-heatmap'
 
+import { barchartstackedlong } from './custom-charts/barchartstackedlong'
+
 // New charts, not included into first release.
 // Comment at necessity.
 let charts = [
@@ -42,6 +44,7 @@ let charts = [
   barchart,
   barchartmultiset,
   barchartstacked,
+  barchartstackedlong,
   beeswarm,
   boxplot,
   bubblechart,
