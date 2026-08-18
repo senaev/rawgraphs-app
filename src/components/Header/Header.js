@@ -5,7 +5,10 @@ import { Navbar, Nav } from 'react-bootstrap'
 export default function Header({ menuItems }) {
   return (
     <Navbar bg="white" expand="lg" sticky="top" className={styles.navbar}>
-      <Navbar.Brand href="/"><b>RAW</b><span className="text-primary">Graphs</span> 2.0</Navbar.Brand>
+      {/* PUBLIC_URL, not "/": the app is served from a subpath on GitHub Pages,
+          where "/" would leave the app. It is empty in development, so the link
+          stays "/" there. */}
+      <Navbar.Brand href={`${process.env.PUBLIC_URL}/`}><b>RAW</b><span className="text-primary">Graphs</span> 2.0</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
