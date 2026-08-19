@@ -53,8 +53,8 @@ const baseMapping = {
   color: 'USAGE_TYPE',
 }
 
-describe('barchartstackedlong mapping', () => {
-  it('takes a single numeric column, unlike the wide stacked bar chart', () => {
+describe('barchartsplitbyvalue mapping', () => {
+  it('takes a single numeric column, unlike the chart split by columns', () => {
     const size = dimensions.find((d) => d.id === 'size')
     expect(size.multiple).toBeUndefined()
     expect(size.validTypes).toEqual(['number'])
